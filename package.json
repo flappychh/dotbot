@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@discordjs/builders": "^0.15.0",
+    "ascii-table": "^0.0.9",
+    "config.json": "^0.0.4",
+    "cpu-stat": "^2.0.1",
+    "discord.js": "^13.7.0",
+    "express": "^4.18.1",
+    "glob": "^8.0.3",
+    "moment": "^2.29.3",
+    "moment-duration-format": "^2.3.2",
+    "mongoose": "^6.3.5",
+    "ms": "^2.1.3",
+    "promisify": "^0.0.3",
+    "strftime": "^0.10.1",
+    "util": "^0.12.4",
+    "weather-js": "^2.0.0"
+  }
+}

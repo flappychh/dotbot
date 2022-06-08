@@ -1,0 +1,20 @@
+{
+  "files": {
+    "cmds/dev/ping.js": [
+      {
+        "id": "8a422cd3-2d6a-41a5-9cab-f2240b2343c0",
+        "line": 10,
+        "version": 1130,
+        "index": 379
+      }
+    ],
+    "cmds/info/ui.js": [
+      {
+        "id": "8da856aa-584f-409d-9695-ad348a8bc447",
+        "line": 3,
+        "version": 1818,
+        "index": 82
+      }
+    ]
+  }
+}
