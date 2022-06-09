@@ -5,13 +5,13 @@ module.exports = {
   category: "RPG история",
   description: "продолжение самой неинтересной истории.",
   run: async(client, message, args) => {
-  let udata = await User.findOne({userId:message.author, guildId: message.guild.id});
+  let udata = await User.findOne({userID:message.author.id, guildID: message.guild.id});
        if(udata.firstglr == 1) {
   let lolich = new MessageEmbed()
    .addField("?", "зачем вам читать то, что уже прочитано?")
    .setColor("#767f8b")
     message.reply({embeds: [lolich]})
- }  else {
+ } else {
 const lol = new MessageActionRow()
             .addComponents(
              new MessageButton()
@@ -37,6 +37,6 @@ const embed = new MessageEmbed()
 	}
 });
 collector.on('end', collected => {return;});
-  }
+  };
 }
 }

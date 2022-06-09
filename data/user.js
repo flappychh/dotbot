@@ -5,7 +5,10 @@ const schema = mongoose.Schema({
     prologr: {type: Number, default: 0},
     firstglr: {type: Number, default: 0},
     twoglr: {type: Number, default: 0},
-    coins: {type: Number, default: 0}
+    book: {type: Number, default: 0},
+    coins: {type: Number, default: 0},
+    invent: {type: Number, default: 0},
+    hand: {type: String, default: 'левая'}
     
 
 })

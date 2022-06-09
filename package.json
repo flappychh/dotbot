@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@discordjs/builders": "^0.15.0",
+    "aoi.js": "^5.1.2",
     "ascii-table": "^0.0.9",
     "config.json": "^0.0.4",
     "cpu-stat": "^2.0.1",

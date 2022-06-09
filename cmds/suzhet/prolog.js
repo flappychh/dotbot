@@ -5,12 +5,13 @@ module.exports = {
   category: "RPG история",
   description: "начало самой неинтересной истории.",
   run: async(client, message, args) => {
-  let udata = await User.findOne({userId:message.author, guildId: message.guild.id});
-       if(udata.prologr = 1) {
+  let udata = await User.findOne({userID:message.author.id, guildID: message.guild.id});
+       if(udata.prologr == 1)  {
   let lolich = new MessageEmbed()
-   .addField("?", "зачем вам читать то, что уже прочитано?")   
+   .addField("?", "зачем вам читать то, что уже прочитано?")
+  .setColor("#767f8b")
     message.reply({embeds: [lolich]})
- }  else {
+ } else {
 const lol = new MessageActionRow()
             .addComponents(
              new MessageButton()
@@ -31,8 +32,8 @@ const embed = new MessageEmbed()
   .addField("пролог.", "```вы прочитали пролог, спасибо!```")
   .setColor("#767f8b")
 		await msg.edit({ embeds: [nembed], components: []});
-    user.prologr = 1
-    user.save()
+    udata.prologr = 1
+    udata.save()
 	}
 });
 collector.on('end', collected => {return;});

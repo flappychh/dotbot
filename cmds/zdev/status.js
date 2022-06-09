@@ -4,7 +4,8 @@ require("../../events/client/ready");
 
 module.exports = {
  name: "status",
-  category: "разработчикам"
+  category: "разработчикам",
+  aliases: ["stat"],
   description: "отображает статус бота и подключение к БД.",
   /**
   *
