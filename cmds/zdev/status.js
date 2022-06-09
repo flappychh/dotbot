@@ -4,8 +4,9 @@ require("../../events/client/ready");
 
 module.exports = {
  name: "status",
-  category: "разработчикам"
+  category: "разработчикам",
   description: "отображает статус бота и подключение к БД.",
+  aliases: ["zhopnayakomanda"],
   /**
   *
   * @param {Client} client
