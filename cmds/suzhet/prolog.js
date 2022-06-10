@@ -2,6 +2,7 @@ const { MessageEmbed, MessageButton, MessageActionRow, MessageComponentInteracti
 
 module.exports = {
   name: "prolog",
+  aliases: ["prologr"],
   category: "RPG история",
   description: "начало самой неинтересной истории.",
   run: async(client, message, args) => {

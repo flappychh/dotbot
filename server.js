@@ -18,21 +18,8 @@ module.exports = keepAlive;
 
 require("./handlers/events")(client);
 require("./handlers/commands")(client);
-
-client.on("messageCreate", async message => {
-
-  if(message.content == "<@983009232498606194>" || message.content == "<@!983009232498606194>") {
-    let embed = {
-      author: "даров.",
-      description: "я d.js13, ты можешь использовать команды с префиксом \`.\`.",
-      color: "#767f8b"
-    }
-    message.reply({
-      embeds:[embed]
-    })
-  } else return;
   
-})
+
 
  client.on('messageCreate', async message => {
     if(message.author.bot) return;
@@ -46,6 +33,6 @@ client.on("messageCreate", async message => {
     if(!command) command = client.commands.get(client.aliases.get(cmd));
     if(command) command.run(client, message, args) 
 })
-// client.on("debug", ( e ) => console.log(e)); на всякий
+client.on("debug", ( e ) => console.log(e));
 
 client.login(process.env.TOKEN)

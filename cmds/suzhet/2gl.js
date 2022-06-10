@@ -2,6 +2,7 @@ const { MessageEmbed, MessageButton, MessageActionRow, MessageComponentInteracti
 
 module.exports = {
   name: "2gl",
+  aliases: ["2glr"],
   category: "RPG история",
   description: "продолжение самой неинтересной истории.",
   run: async(client, message, args) => {

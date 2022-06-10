@@ -10,13 +10,15 @@ module.exports = {
     if(udata.twoglr == 0) {
       let hui = new MessageEmbed()
       .addField('доступ запрещен', 'чтобы открыть доступ, прочитайте вторую главу.')
+      .setColor("#767f8b")
+      .setThumbnail(client.user.avatarURL({size: 2048}))
       message.reply({embeds: [hui]})
     } else {
     let zalupa = new MessageEmbed()
-    .setAuthor(message.author.tag, message.author.avatarURL({ dynamic: true, size: 2048 }), `https://discord.com/users/${message.author.id}`)
     .setThumbnail(client.user.avatarURL({size: 2048}))
     .addField("твой инвентарь :arrow_heading_down:", "<:mbslot:984537899590639616>")
-    .addField("хранилища", `\`\`\`udata.hand рука: 1/1 (мистическая книга)\`\`\``)
+    .addField("хранилища", `\`\`\`${udata.hand} рука: 1/1 (мистическая книга)\`\`\``)
+      .setColor("#767f8b")
     message.reply({embeds: [zalupa]})
     }
   }
