@@ -8,7 +8,11 @@ const schema = mongoose.Schema({
     book: {type: Number, default: 0},
     coins: {type: Number, default: 0},
     invent: {type: Number, default: 0},
-    hand: {type: String, default: 'левая'}
+    hand: {type: String, default: 'левая'},
+    biog: {type: String, default: 'отсутсвует'},
+    dailycoinscd: {type: Number, default: 0},
+    thirdglr: {type: Number, default: 0} 
+  
     
 
 })
